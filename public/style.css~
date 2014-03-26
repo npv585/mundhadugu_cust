@@ -1,0 +1,774 @@
+.section {
+	width:100%;
+	padding:30px 0 30px 0;
+}
+
+.bg1 {
+	background:url('images/bg1.png') repeat;
+}
+
+.bg2 {
+	background:url('images/bg2.png') repeat;
+}
+
+.bg3 {
+	background:url('images/bg3.png') repeat;
+}
+
+.content {
+	width:950px;
+	margin-left:15%;
+	margin-right:10%;
+	line-height:1.5em;
+	text-align:center;
+	margin-bottom:40px;
+	position:relative;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'StrangeLove';
+    src: url('fonts/strangelove-text.eot');
+    src: url('fonts/strangelove-text?#iefix') format('embedded-opentype'),
+         url('fonts/strangelove-text.woff') format('woff'),
+         url('fonts/strangelove-text.ttf') format('truetype'),
+         url('fonts/strangelove-text.svg#StrangeLove') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration:none;
+	color:#29ACC8;
+}
+
+
+a:active {
+	outline:none;
+}
+
+h1 {
+	font-size:120px;
+	margin:50px 0;
+	color:#fff;
+	font-family: 'StrangeLove';
+	font-weight:normal;
+}
+
+body {
+	background:url("images/bg1.png") repeat fixed #27ADC8;
+	font-family:'Helvetica',Arial, Sans-serif;
+	color:#fff;
+}
+
+#qLpercentage {
+font-family:"StrangeLove";
+font-size:50px;
+letter-spacing:1px;
+font-weight:bold;
+}
+
+#container {
+	width:100%;
+}
+
+#nav {
+	width:96px;
+	height:100%;
+	position:fixed;
+	left:0;
+	background:url('images/navbg.png') repeat;
+	z-index:100;
+	font-family: 'StrangeLove';
+	font-weight:normal;
+/*	-moz-box-shadow: 0 0 5px 5px #000;
+	-webkit-box-shadow: 0 0 5px 5px#000;
+	box-shadow: 0 0 5px 5px #000;
+	border-left:5px solid #29ACC8;
+	border-right:1px solid #474747;
+	*/
+}
+
+
+#nav li {
+	height:90px;
+	width:89px;
+	float:left;
+	list-style:none;
+	color:#fff;
+	text-align:center;
+	font-size:25px;
+	font-weight:bold;
+	 padding:0 10px 0 0;
+	 margin-bottom:10px;
+	 
+
+}
+
+#nav li:hover {
+	background-color:#000;
+	color:#fff;
+}
+
+.current {
+	background-color:#F4C01C !important;
+}
+
+.current a {
+	color:#fff !important;
+}
+
+#nav li a {
+    color: #ccc;
+    text-decoration:none;
+    display: block;
+    height:35px;
+    width:100px;
+    padding-top:55px;
+}
+
+#nav li:hover a {
+    color:#fff !important;
+    border-bottom:none;
+}
+
+.active a {
+	color:#fff !important;
+}
+
+
+li.aboutme {
+	background: url("images/nav_sprites.png") no-repeat;
+	background-position: -390px 0px;
+	-webkit-transform: rotate(-1deg); 
+	-moz-transform: rotate(-1deg);	
+}
+
+li.home {
+	background: url("images/nav_sprites.png") no-repeat;
+	background-position: 8px 0px;
+	-webkit-transform: rotate(1deg); 
+	-moz-transform: rotate(1deg);	
+}
+
+li.interactive {
+	background: url("images/nav_sprites.png") no-repeat;
+	background-position: -72px 0px;
+	-webkit-transform: rotate(1deg); 
+	-moz-transform: rotate(1deg);	
+}
+
+li.print {
+	background: url("images/nav_sprites.png") no-repeat;
+	background-position: -231px 0px;
+	-webkit-transform: rotate(-1deg); 
+	-moz-transform: rotate(-1deg);	
+}
+
+li.personal {
+	background: url("images/nav_sprites.png") no-repeat;
+	background-position: -470px 0px;
+	-webkit-transform: rotate(1deg); 
+	-moz-transform: rotate(1deg);	
+}
+
+li.identity {
+	background: url("images/nav_sprites.png") no-repeat;
+	background-position: -152px 0px;
+	-webkit-transform: rotate(-1deg); 
+	-moz-transform: rotate(-1deg);	
+}
+
+li.contact {
+	background: url("images/nav_sprites.png") no-repeat;
+	background-position: -310px 0px;
+	-webkit-transform: rotate(1deg); 
+	-moz-transform: rotate(1deg);	
+}
+
+li.logo {
+	background: url("images/nav_sprites.png") no-repeat;
+	background-position: -552px -1px;
+	height: 64px;
+}
+
+li.likebutton {
+	padding-top:20px;
+}
+
+#section_home a {
+		font-family:"StrangeLove";
+		font-weight: bold;
+		font-size: 30px;
+		letter-spacing: 2px;
+		color:#fff;
+		display:block;
+		width:100%;
+		height:40px;
+		padding-top:155px;
+}
+
+#logo {
+	background:url('images/logo.png') no-repeat;
+	background-position: center;
+	height:334px;
+	width:344px;
+	position:absolute;
+	left:33%;
+	top:140px;
+	z-index:20;
+}
+
+#branding {
+	background:url('images/branding.png') no-repeat;
+	height:188px;
+	width:139px;
+	position:absolute;
+	top:233px;
+	left:155px;
+	z-index:5;
+}
+
+#interactive {
+	background:url('images/interactive.png') no-repeat;
+	height:188px;
+	width:145px;
+	position:absolute;
+	top:233px;
+	left:0px;
+	z-index:3;
+}
+
+#about {
+	background:url('images/about.png') no-repeat;
+	height:188px;
+	width:139px;
+	position:absolute;
+	top:233px;
+	left:635px;
+	z-index:5;
+}
+
+#contact {
+	background:url('images/contact.png') no-repeat;
+	height:188px;
+	width:145px;
+	position:absolute;
+	top:233px;
+	left:790px;
+	z-index:3;
+}
+
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.thumb { width:100%; }
+}	
+
+.project {
+	width:950px;
+	text-align:left;
+	display:block;
+	position:relative;
+	margin-bottom:100px;
+	margin-top:20px;
+}
+
+.thumb {
+	position:relative;
+	top:30px;
+	left:0;
+	width:600px;
+}
+
+.thumb img {
+	margin-bottom:0px;
+}
+
+.title {
+	margin:10px 0;
+	background:#29ACC8;
+	padding: 10px 10px 10px 10px;
+	-webkit-transform: rotate(-2deg); 
+	-moz-transform: rotate(-2deg);
+	z-index:20;	
+	position:absolute;
+	top:-15px;
+	left:-10px;
+	-moz-box-shadow: 3px 3px 3px #000;
+	-webkit-box-shadow: 3px 3px 3px #000;
+	box-shadow: 3px 3px 3px #000;
+}
+
+.project .info {
+	position: absolute;
+	right: 0px;
+	width: 300px;
+	height:410px;
+	background: rgba(0,0,0,.4);
+	top: 30px;
+	padding: 20px;
+	border-bottom:1px solid #000;
+	border-right:1px solid #000;
+	font-size:14px;
+}
+
+#section_branding .project .info {
+	background: rgba(255,255,255,.4);
+	border:1px solid #ededec;
+	color:#999;
+}
+
+#section_branding .project .info h2 {
+	color:#29ACC8;
+}
+
+.project .info .button a {
+	position: absolute;
+	right: 44px;
+	width: 250px;
+	height: 2px;
+	background: rgba(0, 0, 0, .6);
+	bottom: 20px;
+	padding: 6px 0 30px 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+.project .info .button a:hover {
+    background: rgba(0, 0, 0, .8);
+}
+
+.project .info h2 {
+	font-weight:bold;
+	font-size:40px;
+	margin-bottom:15px;
+}
+
+.project h2 {
+	color:#fff;
+	font-family:"StrangeLove";
+	font-size:40px;
+	text-align:center;
+}
+
+.clear {
+	clear:both;
+}
+
+.float {
+	float:left;
+}
+
+#section_home, #section_contact {
+		font-size:18px;
+		text-align:center;
+		min-height:768px;
+}
+
+
+#section_about, #section_branding {
+		font-size:18px;
+		text-align:center;
+		color:#999;
+		min-height:600px;
+		position:relative;
+}
+
+#aboutPic {
+	width:521px;
+	height:504px;
+	background:url("images/mesketch.png") no-repeat;
+	z-index:0;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+#aboutBox {
+	float: left;
+	width: 855px;
+	line-height: 2em;
+	margin: 10px 0 90px 0;
+	font-size:16px;
+	background: rgba(255,255,255,.4);
+	padding:20px 40px 20px 20px;
+	border:1px solid #ededec;
+	z-index:5;
+}
+
+
+#aboutTxt a {
+	background:#29ACC8;
+	color:#fff;
+	padding:3px 5px;
+}
+
+#aboutTxt a:hover {
+	color:#29ACC8;
+	background:none;
+}
+
+#aboutMePic {
+	position:absolute;
+	top: 117px;
+	right: -9px;
+	z-index:5;
+}
+
+#section_about h1, #section_branding h1 {
+	color:#29ACC8;
+}
+
+
+
+/*
+ * jQuery Nivo Slider v2.7.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+	color:#fff;
+	background:#000;
+	padding:5px;
+	font-size:14px;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+	display:none;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+
+/* 
+
+///////// Contact Form CSS ////// 
+
+
+/* Style for the contact form and status messages */
+
+#contactForm, .statusMessage {
+  color: #fff;
+}
+
+
+/* The form dimensions */
+
+#contactForm {
+  width: 600px;
+  margin-left:18%;
+}
+
+/* Dimensions and position of the status messages */
+
+.statusMessage {
+  margin: 0 auto;
+  width: 600px;
+  padding: 1.5em;
+  font-family:"StrangeLove";
+  font-size:45px;
+  font-weight:bold;
+  text-align:center;
+  letter-spacing:1px;
+  line-height:1em;
+  position: absolute;
+  top: 178px;
+  left: 119px;
+  display:none;
+}
+
+.statusMessage p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Give form elements consistent margin, padding and line height */
+
+#contactForm ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contactForm ul li {
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+#contactForm input, #contactForm label {
+  line-height: 1em;
+}
+
+
+/* The field labels */
+
+label {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-family:"StrangeLove";
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+
+
+/* The fields */
+
+input, textarea {
+  display: block;
+  margin: 0;
+  padding: .4em;
+  width: 100%;
+  font-family: "StrangeLove","Helvetica", Arial, Sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;    
+  border-radius: 5px;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  background: rgba(255,255,255,.7);
+}
+
+textarea {
+  height: 5em;
+  line-height: 1.5em;
+  resize: none;
+}
+
+
+/* Place a border around focused fields, and hide the inner shadow */
+
+#contactForm input:focus, #contactForm textarea:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  background: rgba(255,255,255, 1);
+}
+
+
+/* Display correctly filled-in fields with a green background */
+
+input:valid, textarea:valid {
+  background: #dfd;
+}
+
+
+/* The Send and Cancel buttons */
+
+#formButtons {
+	width: 129px;
+	margin: 0 auto;
+}
+
+input[type="submit"], input[type="button"] {
+  margin: 2em 1em 0 1em;
+  width: 10em;
+  padding: 20px 0 20px 0;
+  color: #fff;
+  background: #000;
+  font-size: 1em;
+  line-height: 1em;
+  opacity: .7;
+  font-size: 14px;
+  letter-spacing:0;
+  color:#fff;
+  font-family:"Helvetica",Arial, Sans-serif;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="button"]:hover,
+input[type="button"]:active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+input[type="submit"]:active, input[type="button"]:active {
+  color: #fff;
+  background: #F4C01C;
+}
+
+input[type="button"] {
+  background: #f33;
+}
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	#container {margin:0;}
+	#nav {
+		width: 100%;
+		height: 86px;
+		position: fixed;
+		bottom: 0 !important;
+		background: url('images/navbg.png') repeat;
+		z-index: 100;
+		font-family: 'Helvetica',Arial, Sans-serif;
+		font-weight: bold;
+		}
+	#nav li {
+		-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg);
+		font-size:14px;
+		color:#fff;
+		margin:0 30px 0 0;	
+	}
+	#nav li.home {
+		margin:0 30px 0 12em;
+	}
+
+	.project .info h2 {
+	font-weight:normal;
+	}
+
+	h2 {
+		font-weight:normal;
+	}
+
+	#section_home a {
+		font-weight:normal;
+	}
+
+	.content {
+		margin:0 auto;
+	}
+
+}
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px) {
+	#container {margin:0;}
+	#nav {
+		width: 100%;
+		height: 86px;
+		position: fixed;
+		bottom: 0 !important;
+		background: url('images/navbg.png') repeat;
+		z-index: 100;
+		font-family: 'Helvetica',Arial, Sans-serif;
+		font-weight: bold;
+		}
+	#nav li {
+		-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg);
+		font-size:14px;
+		color:#fff;
+		margin:0 30px 0 0;	
+	}
+	#nav li.home {
+		margin:0 30px 0 12em;
+	}
+
+	.project .info h2 {
+	font-weight:normal;
+	}
+
+	h2 {
+		font-weight:normal;
+	}
+
+	#section_home a {
+		font-weight:normal;
+	}
+
+	.content {
+		margin:0 auto;
+	}
+
+}
